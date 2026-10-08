@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 14px;
+    font-weight: 500;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 30px;
+    color: white;
+}
+
+.logo{
+    width: 120px;
+}
+
+/* SHARED DISPLAY: MOBILE & TABLET */
+@media (max-width: 1199px) {
+
+.middle-menu{
+    display: none;
+}
+
+.options{
+    display: none;
+}
+
+.menu-btn{
+    padding: 0 50px;
+    width: 60px;
+}
+
+.menu-btn button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+}
+
+
+
+/* MOBILE VIEW */
+
+@media (max-width: 767px){ 
+
+}
+
+
+/* TABLET VIEW */
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+}
+
+/* FULL SCREEN/PC VIEW */
+@media (min-width: 1200px){
+.logo{
+    margin: 0 25px;
+}
+
+.middle-menu{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.middle-menu a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-icons{
+    width: 25px;
+    margin: 0 5px;
+}
+
+.menu-btn{
+    display: none;
+}
+}
+
