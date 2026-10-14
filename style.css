@@ -147,6 +147,9 @@ button{
     background-color: rgb(244, 244, 244);
     color: rgb(57, 60, 65);
 }
+.secondary.mini{
+    width: 150px;
+}
 .tertiary{
     background-color: rgb(0, 0, 0);
 }
