@@ -175,22 +175,22 @@ button{
     flex-direction: column;
     align-items: center;
     /* overflow: hidden; */
-    
+    /* background-image: url(resources/banner1.avif); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
     width: 100%;
-    height: 100vh;
-
+    height: 80vh;
     padding: 48px 32px 32px 32px;
 }
 
 .slideshow{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
+    object-fit: cover;
 }
 .slide{
     display: none;
@@ -203,7 +203,7 @@ button{
 
 .slide img {
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
 }
 
@@ -245,13 +245,15 @@ button{
     z-index: 2;
 
     top: 20%;
-    left: 45%;
+    left: 40%;
+    transform: translate(-10%, -50%);
 
     color: white;
     
 }
 
 /* //////////////////////////////////////////////////////////// */
+
 .fsd-cards{
     background-color:rgb(244, 244, 244);
     display: flex;
@@ -262,6 +264,7 @@ button{
     height: 600px;
     
 }
+
 .gradient-right{
     background: linear-gradient(to right,#171a20, #3e6ae1, #171a20);
     background-clip: text;
@@ -278,6 +281,7 @@ button{
     width: 50%;
     padding: 40px;
 }
+
 .stats {
     display: flex;
     gap: 40px; 
@@ -304,6 +308,7 @@ button{
     overflow: hidden;
     height: 600px;
 }
+
 .responsive-video{
     width: 100%;
     height: 100%;
@@ -342,8 +347,8 @@ button{
     margin: 50px;
     border-radius: 12px;
     height: 664px;
-    width: 1237px;
-    width: 100%;
+    /* width: 1237px; */
+    /* width: 100%; */
 
     gap: 24px;
 
