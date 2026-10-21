@@ -125,9 +125,7 @@ button{
     margin: 0 5px;
 }
 
-.menu-btn{
-    display: none;
-}
+
 
 
 .hero-banner{
@@ -456,7 +454,7 @@ footer{
     display: none;
 }
 
-.menu-btn{
+/* .menu-btn{
     padding: 0 50px;
     width: 60px;
 }
@@ -466,7 +464,7 @@ footer{
     border: none;
     border-radius: 5px;
 
-}
+} */
 
 .fsd-cards{
     background-color:rgb(244, 244, 244);
@@ -547,48 +545,39 @@ footer{
 
 @media (min-width: 768px) and (max-width: 1199px){
 
-header{
-    height: 230px;
-}
-
-.logo{
-    margin: 0 95px;
-    width: 600px;
+.menu-btn{
+    width: 60px;
+    margin: 20px 0;
 }
 
 .menu-btn button{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 2200px; /*just a placement*/
-    background-color: red;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    color: black;
 }
 
+.hero-carousel img{
+    overflow: hidden;
+    object-fit: cover;
+}
 
-
-
-.fsd-cards{
-    display: flex;
-    flex-direction: column;
+.hero-content, 
+.buttons{
+    left: 30%;
     align-items: center;
-    width: 2750px;
-    height: 812px;
-    margin: 0 500px;
-    background-color: red;
 }
-
-.fsd-cards-content{
-    display: flex;
-
-    width: 100%;
-    padding: 40px;
-}
-
 
 
 }
 
 /* FULL SCREEN/PC VIEW */
 @media (min-width: 1200px){
+.menu-btn{
+    display: none;
+}
 
 }
 
