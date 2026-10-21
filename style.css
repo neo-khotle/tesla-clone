@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -102,6 +103,22 @@ p{
 
 @media (min-width: 768px) and (max-width: 1199px){
 
+header{
+    height: 230px;
+}
+
+.logo{
+    margin: 0 95px;
+    width: 600px;
+}
+
+.menu-btn button{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2200px; /*just a placement*/
+    background-color: red;
+}
+
 }
 
 /* FULL SCREEN/PC VIEW */
@@ -172,13 +189,14 @@ button{
 
 .hero-banner{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
-    /* background-image: url(resources/banner1.avif); */
-    background-size: cover;
+    
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     
     width: 100%;
     height: 80vh;
@@ -186,25 +204,36 @@ button{
 }
 
 .slideshow{
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    height: 80vh; /*readjust sizing*/    
+}
+
+.hero-carousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.banner-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: scroll; /*check*/ 
     position: relative;
     width: 100%;
     height: 80vh;
-    overflow: hidden;
-    object-fit: cover;
-}
-.slide{
-    display: none;
-    width: 100%;
-    height: 100vh;
-}
-.slide.active {
-    display: block;
-}
-
-.slide img {
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .prev,
@@ -374,7 +403,7 @@ button{
 .preowned{
     background-image: url("resources/preowned-cars.avif");
     padding-top: 60px;
-}
+} 
 
 .models{
     margin: 40px 0;    
@@ -433,7 +462,7 @@ button{
     border-bottom-right-radius: 8px;
 }
 
-.solar-panels{
+/* .solar-panels{
     background-image: url("resources/solar-panels.avif");
 
 }
@@ -448,7 +477,7 @@ button{
 
 .solar-roof{
     background-image: url("resources/solar-roof.avif");
-}
+} */
 
 footer{
     font: 12px;
