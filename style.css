@@ -446,6 +446,13 @@ footer{
 /* SHARED DISPLAY: MOBILE & TABLET */
 @media (max-width: 1199px) {
 
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    
+}
+
 .middle-menu{
     display: none;
 }
@@ -454,24 +461,26 @@ footer{
     display: none;
 }
 
-/* .menu-btn{
-    padding: 0 50px;
-    width: 60px;
+main{
+    width: 180vw;
 }
 
-.menu-btn button{
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
+.banner-img{
+    width: 185vw;
+}
 
-} */
+.prev, .next{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 8px;
+}
 
 .fsd-cards{
     background-color:rgb(244, 244, 244);
     display: flex;
     width: 100%;
-    max-width: 1800px;
-    margin: 50px auto;
     border-radius: 12px;
     height: 600px;
      
@@ -544,6 +553,10 @@ footer{
 /* TABLET VIEW */
 
 @media (min-width: 768px) and (max-width: 1199px){
+header{
+    width: 185vw;
+}
+
 
 .menu-btn{
     width: 60px;
@@ -560,16 +573,69 @@ footer{
 }
 
 .hero-carousel img{
-    overflow: hidden;
+    /* overflow: hidden; */
     object-fit: cover;
 }
+/*
+.banner-img{
+    background-color: blue; 
+}*/
 
 .hero-content, 
 .buttons{
     left: 30%;
     align-items: center;
 }
+.fsd-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 150vh;
+    margin: 40px 55px;
+    padding-right: 40px;
+    border-radius: 12px;
+}
 
+.fsd-tablet-view{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.fsd-cards-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fsd-stats{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* margin-top: 200px; */
+}
+
+.driving-stats-1{
+    order: 0;
+}
+
+.driving-stats-2{
+    order: 2;
+}
+
+.video{
+    display: flex;
+    width: 171vw;
+    height: 70vh;
+    border-radius: 12px;
+    /* margin-bottom: 200px; */
+    order: 1;
+}
+
+.responsive-video{
+    order: 1;
+}
 
 }
 
