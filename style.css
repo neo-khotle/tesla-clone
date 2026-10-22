@@ -586,24 +586,29 @@ header{
     left: 30%;
     align-items: center;
 }
+
+
 .fsd-cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 95%;
-    height: 150vh;
+    height: 130vh;
     margin: 40px 55px;
     padding-right: 40px;
     border-radius: 12px;
+
 }
 
 .fsd-tablet-view{
     display: flex;
     flex-direction: row;
     width: 100vw;
+    
 }
 
-.fsd-cards-content{
+.fsd-cards-content,
+.stats{
     display: flex;
     flex-direction: column;
 }
@@ -616,25 +621,12 @@ header{
     /* margin-top: 200px; */
 }
 
-.driving-stats-1{
-    order: 0;
-}
-
-.driving-stats-2{
-    order: 2;
-}
-
 .video{
     display: flex;
     width: 171vw;
-    height: 70vh;
+    height: 80vh;
     border-radius: 12px;
     /* margin-bottom: 200px; */
-    order: 1;
-}
-
-.responsive-video{
-    order: 1;
 }
 
 }
